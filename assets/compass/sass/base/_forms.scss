@@ -1,0 +1,64 @@
+form {
+	input[type="text"], input[type="email"], textarea {
+		border: 1px solid $grey !important;
+		padding: 5%;
+		background: $white;
+		@include span(full);
+		border-radius: 3px;
+		margin-bottom: 6%;
+	}
+
+	input[type="radio"] {
+		margin: 3% 4% 10% 0;
+	}
+
+	&.wpcf7-form {
+		p{
+			clear: both;
+		}
+
+		input.wpcf7-submit {
+			font-family: 'Oswald', sans-serif;
+			color: $white !important;
+			@include fontsize(15);
+			font-weight: bold;
+			text-decoration: none !important;
+			background: $red;
+			text-transform: uppercase;
+			padding: 2% 8%;
+			border-radius: 5px;
+			cursor: pointer;
+
+			&:hover {
+				background: $gold;
+				text-decoration: none !important;
+			}
+		}
+
+		input.wpcf7-text, textarea.wpcf7-textarea, input.wpcf7-date {
+			padding: 3%;
+			margin-bottom: 3%;
+			float: right;
+		}
+
+		label {
+			width: 20%;
+			float: left;
+			padding-top: 3%;
+			color: $text-color;
+		}
+
+		input.wpcf7-date {
+			float: right;
+			width: 70%;
+		}
+
+		.event-details textarea {
+			height: 30%;
+		}
+
+		span {
+			clear: both;
+		}
+	}
+}

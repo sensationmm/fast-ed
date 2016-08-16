@@ -1,0 +1,2549 @@
+/* line 21, ../../../../../../../.rvm/gems/ruby-2.2.1/gems/susy-2.2.5/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 2, ../compass/sass/base/_reset.scss */
+body {
+  padding: 0px 2%;
+  margin: 0px;
+}
+
+/* line 7, ../compass/sass/base/_reset.scss */
+h1, h2, h3, h4, h5, p {
+  padding: 0px;
+  margin: 0px 0px 5px 0px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 15, ../compass/sass/base/_reset.scss */
+header, article, section, aside, footer, div {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 21, ../compass/sass/base/_reset.scss */
+ul, li {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 26, ../compass/sass/base/_reset.scss */
+ul {
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+/* line 31, ../compass/sass/base/_reset.scss */
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+/* line 35, ../compass/sass/base/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 42, ../compass/sass/base/_reset.scss */
+form input {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+/* line 48, ../compass/sass/base/_reset.scss */
+img {
+  border: 0;
+  display: block;
+}
+
+/* line 53, ../compass/sass/base/_reset.scss */
+.clear {
+  clear: both;
+}
+
+@font-face {
+  font-family: "montserrat-bold";
+  src: url("../fonts/montserrat-bold.eot");
+  src: url("../fonts/montserrat-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-bold.woff") format("woff"), url("../fonts/montserrat-bold.ttf") format("truetype"), url("../fonts/montserrat-bold.svg#ywftsvg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("../fonts/montserrat-regular.eot");
+  src: url("../fonts/montserrat-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-regular.woff") format("woff"), url("../fonts/montserrat-regular.ttf") format("truetype"), url("../fonts/montserrat-regular.svg#ywftsvg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, ../compass/sass/base/_typography.scss */
+body, input, textarea {
+  font-family: 'Open Sans', sans-serif;
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 1, ../compass/sass/base/_typography.scss */
+  body, input, textarea {
+    font-size: 2.8vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 1, ../compass/sass/base/_typography.scss */
+  body, input, textarea {
+    font-size: 2.33333vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 1, ../compass/sass/base/_typography.scss */
+  body, input, textarea {
+    font-size: 1.4vw;
+  }
+}
+
+/* line 7, ../compass/sass/base/_typography.scss */
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #542f17;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 7, ../compass/sass/base/_typography.scss */
+  h1 {
+    font-size: 5.6vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 7, ../compass/sass/base/_typography.scss */
+  h1 {
+    font-size: 4.66667vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 7, ../compass/sass/base/_typography.scss */
+  h1 {
+    font-size: 2.8vw;
+  }
+}
+
+/* line 14, ../compass/sass/base/_typography.scss */
+.article-heading, body#single-recipe h1, body#single-blog article h1, body#single article h1 {
+  font-family: 'Opens sans', sans-serif;
+  text-transform: none;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin-bottom: 2%;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 14, ../compass/sass/base/_typography.scss */
+  .article-heading, body#single-recipe h1, body#single-blog article h1, body#single article h1 {
+    font-size: 7.2vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 14, ../compass/sass/base/_typography.scss */
+  .article-heading, body#single-recipe h1, body#single-blog article h1, body#single article h1 {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 14, ../compass/sass/base/_typography.scss */
+  .article-heading, body#single-recipe h1, body#single-blog article h1, body#single article h1 {
+    font-size: 3.6vw;
+  }
+}
+
+/* line 22, ../compass/sass/base/_typography.scss */
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #bf301a;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 22, ../compass/sass/base/_typography.scss */
+  h2 {
+    font-size: 5.6vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 22, ../compass/sass/base/_typography.scss */
+  h2 {
+    font-size: 4.66667vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 22, ../compass/sass/base/_typography.scss */
+  h2 {
+    font-size: 2.8vw;
+  }
+}
+
+/* line 29, ../compass/sass/base/_typography.scss */
+article > h2, h2.article, body#magazine .magazine-content .magazine-week h2 {
+  font-family: 'Open sans', sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 2.5%;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 29, ../compass/sass/base/_typography.scss */
+  article > h2, h2.article, body#magazine .magazine-content .magazine-week h2 {
+    font-size: 3.2vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 29, ../compass/sass/base/_typography.scss */
+  article > h2, h2.article, body#magazine .magazine-content .magazine-week h2 {
+    font-size: 2.66667vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 29, ../compass/sass/base/_typography.scss */
+  article > h2, h2.article, body#magazine .magazine-content .magazine-week h2 {
+    font-size: 1.6vw;
+  }
+}
+
+/* line 37, ../compass/sass/base/_typography.scss */
+article > p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 2.5%;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 37, ../compass/sass/base/_typography.scss */
+  article > p {
+    font-size: 3.2vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 37, ../compass/sass/base/_typography.scss */
+  article > p {
+    font-size: 2.66667vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 37, ../compass/sass/base/_typography.scss */
+  article > p {
+    font-size: 1.6vw;
+  }
+}
+
+/* line 42, ../compass/sass/base/_typography.scss */
+p.intro {
+  font-size: 16px;
+  line-height: 1.4;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 42, ../compass/sass/base/_typography.scss */
+  p.intro {
+    font-size: 3.2vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 42, ../compass/sass/base/_typography.scss */
+  p.intro {
+    font-size: 2.66667vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 42, ../compass/sass/base/_typography.scss */
+  p.intro {
+    font-size: 1.6vw;
+  }
+}
+
+/* line 48, ../compass/sass/base/_typography.scss */
+div.button a, div.button input[type="submit"] {
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff !important;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: bold;
+  text-decoration: none !important;
+  background: #333333;
+  text-transform: uppercase;
+  padding: 2% 8%;
+  border-radius: 5px;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 48, ../compass/sass/base/_typography.scss */
+  div.button a, div.button input[type="submit"] {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 48, ../compass/sass/base/_typography.scss */
+  div.button a, div.button input[type="submit"] {
+    font-size: 2.5vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 48, ../compass/sass/base/_typography.scss */
+  div.button a, div.button input[type="submit"] {
+    font-size: 1.5vw;
+  }
+}
+/* line 59, ../compass/sass/base/_typography.scss */
+div.button a:hover, div.button input[type="submit"]:hover {
+  background: #cea851;
+  text-decoration: none !important;
+}
+/* line 65, ../compass/sass/base/_typography.scss */
+div.button.red a, div.button.red input[type="submit"] {
+  background: #bf301a;
+}
+/* line 68, ../compass/sass/base/_typography.scss */
+div.button.red a:hover, div.button.red input[type="submit"]:hover {
+  background: #cea851;
+}
+/* line 73, ../compass/sass/base/_typography.scss */
+div.button.back {
+  display: inline;
+}
+/* line 75, ../compass/sass/base/_typography.scss */
+div.button.back a {
+  padding: 1% 2%;
+  float: right;
+}
+/* line 81, ../compass/sass/base/_typography.scss */
+div.button.booking {
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 4%;
+}
+/* line 87, ../compass/sass/base/_typography.scss */
+div.button.booking a {
+  display: block;
+  width: 100%;
+  padding: 5% 0;
+  float: right;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 87, ../compass/sass/base/_typography.scss */
+  div.button.booking a {
+    font-size: 4.8vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 87, ../compass/sass/base/_typography.scss */
+  div.button.booking a {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 87, ../compass/sass/base/_typography.scss */
+  div.button.booking a {
+    font-size: 2.4vw;
+  }
+}
+/* line 99, ../compass/sass/base/_typography.scss */
+div.button.learnmore a {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.4;
+  padding: 2% 4%;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 99, ../compass/sass/base/_typography.scss */
+  div.button.learnmore a {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 99, ../compass/sass/base/_typography.scss */
+  div.button.learnmore a {
+    font-size: 3.33333vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 99, ../compass/sass/base/_typography.scss */
+  div.button.learnmore a {
+    font-size: 2vw;
+  }
+}
+
+/* line 107, ../compass/sass/base/_typography.scss */
+ul.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 2, ../compass/sass/base/_forms.scss */
+form input[type="text"], form input[type="email"], form textarea {
+  border: 1px solid #dbdbdb !important;
+  padding: 5%;
+  background: #ffffff;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 3px;
+  margin-bottom: 6%;
+}
+/* line 11, ../compass/sass/base/_forms.scss */
+form input[type="radio"] {
+  margin: 3% 4% 10% 0;
+}
+/* line 16, ../compass/sass/base/_forms.scss */
+form.wpcf7-form p {
+  clear: both;
+}
+/* line 20, ../compass/sass/base/_forms.scss */
+form.wpcf7-form input.wpcf7-submit {
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff !important;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: bold;
+  text-decoration: none !important;
+  background: #bf301a;
+  text-transform: uppercase;
+  padding: 2% 8%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 20, ../compass/sass/base/_forms.scss */
+  form.wpcf7-form input.wpcf7-submit {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 20, ../compass/sass/base/_forms.scss */
+  form.wpcf7-form input.wpcf7-submit {
+    font-size: 2.5vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 20, ../compass/sass/base/_forms.scss */
+  form.wpcf7-form input.wpcf7-submit {
+    font-size: 1.5vw;
+  }
+}
+/* line 32, ../compass/sass/base/_forms.scss */
+form.wpcf7-form input.wpcf7-submit:hover {
+  background: #cea851;
+  text-decoration: none !important;
+}
+/* line 38, ../compass/sass/base/_forms.scss */
+form.wpcf7-form input.wpcf7-text, form.wpcf7-form textarea.wpcf7-textarea, form.wpcf7-form input.wpcf7-date {
+  padding: 3%;
+  margin-bottom: 3%;
+  float: right;
+}
+/* line 44, ../compass/sass/base/_forms.scss */
+form.wpcf7-form label {
+  width: 20%;
+  float: left;
+  padding-top: 3%;
+  color: #666666;
+}
+/* line 51, ../compass/sass/base/_forms.scss */
+form.wpcf7-form input.wpcf7-date {
+  float: right;
+  width: 70%;
+}
+/* line 56, ../compass/sass/base/_forms.scss */
+form.wpcf7-form .event-details textarea {
+  height: 30%;
+}
+/* line 60, ../compass/sass/base/_forms.scss */
+form.wpcf7-form span {
+  clear: both;
+}
+
+/* line 1, ../compass/sass/layout/_core.scss */
+body {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 6, ../compass/sass/layout/_core.scss */
+body .body {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+/* line 12, ../../../../../../../.rvm/gems/ruby-2.2.1/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+body .body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 11, ../compass/sass/layout/_core.scss */
+body header {
+  z-index: 5;
+}
+/* line 14, ../compass/sass/layout/_core.scss */
+body header .logo {
+  position: absolute;
+  top: 0px;
+  width: 16.32653061%;
+}
+/* line 19, ../compass/sass/layout/_core.scss */
+body header .logo img {
+  width: 100%;
+}
+/* line 22, ../compass/sass/layout/_core.scss */
+body header nav {
+  width: 74.46809%;
+  float: left;
+  margin-left: 17.02128%;
+  margin-right: -100%;
+  text-transform: uppercase;
+  padding: 3% 0;
+}
+/* line 28, ../compass/sass/layout/_core.scss */
+body header nav ul li {
+  display: inline;
+  padding-left: 2%;
+}
+/* line 32, ../compass/sass/layout/_core.scss */
+body header nav ul li a {
+  color: #542f17;
+  text-decoration: none;
+  border-bottom: 2px solid #ffffff;
+}
+/* line 37, ../compass/sass/layout/_core.scss */
+body header nav ul li a:hover {
+  border-bottom: 2px solid #542f17;
+}
+/* line 41, ../compass/sass/layout/_core.scss */
+body header nav ul li a.active {
+  color: #bf301a;
+  border-bottom: 2px solid #bf301a;
+}
+/* line 50, ../compass/sass/layout/_core.scss */
+body header .mask, body header .mobile-nav, body header .mobile-nav-close {
+  display: none;
+}
+/* line 54, ../compass/sass/layout/_core.scss */
+body header .social-links {
+  float: right;
+  width: 8%;
+  padding: 3% 0;
+}
+/* line 59, ../compass/sass/layout/_core.scss */
+body header .social-links .social-link {
+  float: right;
+  width: 35%;
+  padding-left: 15%;
+}
+/* line 64, ../compass/sass/layout/_core.scss */
+body header .social-links .social-link img {
+  width: 100%;
+}
+/* line 69, ../compass/sass/layout/_core.scss */
+body .banner {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 6px solid #542f17;
+  margin-bottom: 45px;
+}
+/* line 74, ../compass/sass/layout/_core.scss */
+body .banner .banner-inner {
+  height: 156px;
+  overflow: hidden;
+  border-bottom: 5px solid #ffffff;
+}
+/* line 79, ../compass/sass/layout/_core.scss */
+body .banner .banner-inner img {
+  width: 100%;
+}
+/* line 85, ../compass/sass/layout/_core.scss */
+body .col-main {
+  width: 74.46809%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 88, ../compass/sass/layout/_core.scss */
+body .col-main.last {
+  float: right;
+  margin-right: 0;
+}
+/* line 91, ../compass/sass/layout/_core.scss */
+body article.col-main {
+  padding-right: 5%;
+}
+/* line 95, ../compass/sass/layout/_core.scss */
+body section.col-left {
+  width: 23.40426%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 99, ../compass/sass/layout/_core.scss */
+body section.col-right {
+  width: 23.40426%;
+  float: right;
+  margin-right: 0;
+}
+/* line 103, ../compass/sass/layout/_core.scss */
+body article.col-mid {
+  width: 57.44681%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 107, ../compass/sass/layout/_core.scss */
+body article.header {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+/* line 112, ../compass/sass/layout/_core.scss */
+body section.col-sub {
+  width: 31.91489%;
+  float: right;
+  margin-right: 0;
+}
+/* line 116, ../compass/sass/layout/_core.scss */
+body article {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 4%;
+}
+/* line 120, ../compass/sass/layout/_core.scss */
+body article img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 124, ../compass/sass/layout/_core.scss */
+body article img.ajax-loader {
+  width: auto;
+}
+/* line 126, ../compass/sass/layout/_core.scss */
+body article img.alignleft {
+  float: left;
+  margin: 0 2% 2% 0;
+}
+/* line 131, ../compass/sass/layout/_core.scss */
+body article img.alignright {
+  float: right;
+  margin: 0 0 2% 2%;
+}
+/* line 138, ../compass/sass/layout/_core.scss */
+body .cols, body .recipe-finder {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 141, ../compass/sass/layout/_core.scss */
+body .cols .col-header, body .recipe-finder .col-header {
+  font-weight: bold;
+  color: #bf301a;
+  text-transform: uppercase;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #bf301a;
+  marign-bottom: 2%;
+}
+/* line 150, ../compass/sass/layout/_core.scss */
+body .cols .col1, body .recipe-finder .col1 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  height: 0;
+  padding-bottom: 118%;
+  overflow: hidden;
+  margin-bottom: 2%;
+}
+/* line 157, ../compass/sass/layout/_core.scss */
+body .cols .col2, body .recipe-finder .col2 {
+  width: 48.93617%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 160, ../compass/sass/layout/_core.scss */
+body .cols .col2:nth-child(2n), body .recipe-finder .col2:nth-child(2n) {
+  float: right;
+  margin-right: 0;
+}
+/* line 164, ../compass/sass/layout/_core.scss */
+body .cols .col2 .grey-box, body#home .cols .col2 .recipe-finder, body#recipes .cols .col2 .search-recipes, body#recipes .cols .col2 .filter-list, body#tag .cols .col2 .search-recipes, body#tag .cols .col2 .filter-list, body#blog .cols .col2 .search-recipes, body#blog .cols .col2 .filter-list, body#single .cols .col2 .search-recipes, body#single .cols .col2 .filter-list, body#single-blog .cols .col2 .search-recipes, body#single-blog .cols .col2 .filter-list, body#recipes .cols .col2 .num-results, body#tag .cols .col2 .num-results, body#blog .cols .col2 .num-results, body#single .cols .col2 .num-results, body#single-blog .cols .col2 .num-results, body#single-recipe .cols .col2 .recipe-info, body .recipe-finder .col2 .grey-box, body#home .recipe-finder .col2 .recipe-finder, body#recipes .recipe-finder .col2 .search-recipes, body#recipes .recipe-finder .col2 .filter-list, body#tag .recipe-finder .col2 .search-recipes, body#tag .recipe-finder .col2 .filter-list, body#blog .recipe-finder .col2 .search-recipes, body#blog .recipe-finder .col2 .filter-list, body#single .recipe-finder .col2 .search-recipes, body#single .recipe-finder .col2 .filter-list, body#single-blog .recipe-finder .col2 .search-recipes, body#single-blog .recipe-finder .col2 .filter-list, body#recipes .recipe-finder .col2 .num-results, body#tag .recipe-finder .col2 .num-results, body#blog .recipe-finder .col2 .num-results, body#single .recipe-finder .col2 .num-results, body#single-blog .recipe-finder .col2 .num-results, body#single-recipe .recipe-finder .cols .col2 .recipe-info, body#single-recipe .cols .recipe-finder .col2 .recipe-info {
+  padding: 3% 5% !important;
+}
+/* line 169, ../compass/sass/layout/_core.scss */
+body .cols .col3, body .recipe-finder .col3 {
+  width: 31.91489%;
+  float: left;
+  margin-right: 2.12766%;
+  height: 0;
+  padding-bottom: 37.65957%;
+  overflow: hidden;
+  margin-bottom: 2%;
+}
+/* line 175, ../compass/sass/layout/_core.scss */
+body .cols .col3:nth-child(3n), body .recipe-finder .col3:nth-child(3n) {
+  float: right;
+  margin-right: 0;
+}
+/* line 180, ../compass/sass/layout/_core.scss */
+body .cols .col4, body .recipe-finder .col4 {
+  width: 23.40426%;
+  float: left;
+  margin-right: 2.12766%;
+  height: 0;
+  padding-bottom: 27.61702%;
+  overflow: hidden;
+  margin-bottom: 2%;
+}
+/* line 186, ../compass/sass/layout/_core.scss */
+body .cols .col4:nth-child(4n), body .recipe-finder .col4:nth-child(4n) {
+  float: right;
+  margin-right: 0;
+}
+/* line 190, ../compass/sass/layout/_core.scss */
+body .cols .col4 h2, body .recipe-finder .col4 h2 {
+  font-size: 20px;
+  line-height: 1.4;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 190, ../compass/sass/layout/_core.scss */
+  body .cols .col4 h2, body .recipe-finder .col4 h2 {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 190, ../compass/sass/layout/_core.scss */
+  body .cols .col4 h2, body .recipe-finder .col4 h2 {
+    font-size: 3.33333vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 190, ../compass/sass/layout/_core.scss */
+  body .cols .col4 h2, body .recipe-finder .col4 h2 {
+    font-size: 2vw;
+  }
+}
+/* line 194, ../compass/sass/layout/_core.scss */
+body .cols .col4 .view-all, body .recipe-finder .col4 .view-all {
+  font-size: 12px;
+  line-height: 1.4;
+  top: 35% !important;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 194, ../compass/sass/layout/_core.scss */
+  body .cols .col4 .view-all, body .recipe-finder .col4 .view-all {
+    font-size: 2.4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 194, ../compass/sass/layout/_core.scss */
+  body .cols .col4 .view-all, body .recipe-finder .col4 .view-all {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 194, ../compass/sass/layout/_core.scss */
+  body .cols .col4 .view-all, body .recipe-finder .col4 .view-all {
+    font-size: 1.2vw;
+  }
+}
+/* line 199, ../compass/sass/layout/_core.scss */
+body .cols .col4 > a img, body .recipe-finder .col4 > a img {
+  width: 100%;
+}
+/* line 204, ../compass/sass/layout/_core.scss */
+body .cols .col-inner, body .recipe-finder .col-inner {
+  padding: 6% 10%;
+}
+/* line 207, ../compass/sass/layout/_core.scss */
+body .cols .col-inner .view-all, body .recipe-finder .col-inner .view-all {
+  color: #cea851;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+/* line 25, ../compass/sass/modules/_mixin.scss */
+body .cols .col-inner .view-all a, body .recipe-finder .col-inner .view-all a {
+  text-decoration: none;
+  outline: none;
+}
+/* line 29, ../compass/sass/modules/_mixin.scss */
+body .cols .col-inner .view-all a:hover, body .recipe-finder .col-inner .view-all a:hover {
+  text-decoration: underline;
+}
+/* line 214, ../compass/sass/layout/_core.scss */
+body .cols .col-inner .view-all.nospan, body .recipe-finder .col-inner .view-all.nospan {
+  top: 5% !important;
+}
+/* line 221, ../compass/sass/layout/_core.scss */
+body .bhg, body .roughcut {
+  background-size: cover;
+}
+/* line 224, ../compass/sass/layout/_core.scss */
+body .bhg .feature-logo, body .roughcut .feature-logo {
+  position: absolute;
+  top: 6%;
+  left: 6%;
+  width: 88%;
+}
+/* line 230, ../compass/sass/layout/_core.scss */
+body .bhg .feature-logo img, body .roughcut .feature-logo img {
+  width: 100%;
+}
+/* line 235, ../compass/sass/layout/_core.scss */
+body .bhg .feature-info, body .roughcut .feature-info {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+/* line 243, ../compass/sass/layout/_core.scss */
+body .bhg .feature-info .feature-info-text, body .roughcut .feature-info .feature-info-text {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 10%;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 243, ../compass/sass/layout/_core.scss */
+  body .bhg .feature-info .feature-info-text, body .roughcut .feature-info .feature-info-text {
+    font-size: 3.6vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 243, ../compass/sass/layout/_core.scss */
+  body .bhg .feature-info .feature-info-text, body .roughcut .feature-info .feature-info-text {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 243, ../compass/sass/layout/_core.scss */
+  body .bhg .feature-info .feature-info-text, body .roughcut .feature-info .feature-info-text {
+    font-size: 1.8vw;
+  }
+}
+/* line 250, ../compass/sass/layout/_core.scss */
+body .events, body .news {
+  color: #ffffff;
+  background: #333333;
+}
+/* line 254, ../compass/sass/layout/_core.scss */
+body .events h2, body .news h2 {
+  color: #ffffff;
+  margin-bottom: 6%;
+}
+/* line 259, ../compass/sass/layout/_core.scss */
+body .events .event, body .news .event {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 4%;
+}
+/* line 263, ../compass/sass/layout/_core.scss */
+body .events .event .event-image, body .news .event .event-image {
+  width: 27.65957%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 266, ../compass/sass/layout/_core.scss */
+body .events .event .event-image img, body .news .event .event-image img {
+  width: 100%;
+}
+/* line 268, ../compass/sass/layout/_core.scss */
+body .events .event .event-info, body .news .event .event-info {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 270, ../compass/sass/layout/_core.scss */
+body .events .event .event-info:nth-child(2), body .news .event .event-info:nth-child(2) {
+  width: 65.95745%;
+  float: right;
+  margin-right: 0;
+}
+/* line 25, ../compass/sass/modules/_mixin.scss */
+body .events .event .event-info a, body .news .event .event-info a {
+  text-decoration: none;
+  outline: none;
+}
+/* line 29, ../compass/sass/modules/_mixin.scss */
+body .events .event .event-info a:hover, body .news .event .event-info a:hover {
+  text-decoration: underline;
+}
+/* line 273, ../compass/sass/layout/_core.scss */
+body .events .event .event-info .event-date, body .news .event .event-info .event-date {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 278, ../compass/sass/layout/_core.scss */
+body .events .event .event-info a.read-more, body .news .event .event-info a.read-more {
+  display: block;
+  text-transform: uppercase;
+  color: #cea851;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 4%;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 278, ../compass/sass/layout/_core.scss */
+  body .events .event .event-info a.read-more, body .news .event .event-info a.read-more {
+    font-size: 2.4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 278, ../compass/sass/layout/_core.scss */
+  body .events .event .event-info a.read-more, body .news .event .event-info a.read-more {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 278, ../compass/sass/layout/_core.scss */
+  body .events .event .event-info a.read-more, body .news .event .event-info a.read-more {
+    font-size: 1.2vw;
+  }
+}
+/* line 291, ../compass/sass/layout/_core.scss */
+body .news h2 {
+  font-size: 20px;
+  line-height: 1.4;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 291, ../compass/sass/layout/_core.scss */
+  body .news h2 {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 291, ../compass/sass/layout/_core.scss */
+  body .news h2 {
+    font-size: 3.33333vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 291, ../compass/sass/layout/_core.scss */
+  body .news h2 {
+    font-size: 2vw;
+  }
+}
+/* line 293, ../compass/sass/layout/_core.scss */
+body .news .view-all {
+  font-size: 12px;
+  line-height: 1.4;
+  top: 35% !important;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 293, ../compass/sass/layout/_core.scss */
+  body .news .view-all {
+    font-size: 2.4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 293, ../compass/sass/layout/_core.scss */
+  body .news .view-all {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 293, ../compass/sass/layout/_core.scss */
+  body .news .view-all {
+    font-size: 1.2vw;
+  }
+}
+/* line 299, ../compass/sass/layout/_core.scss */
+body .recipe {
+  background-size: cover;
+  cursor: pointer;
+}
+/* line 303, ../compass/sass/layout/_core.scss */
+body .recipe img {
+  width: 100%;
+  height: auto;
+}
+/* line 308, ../compass/sass/layout/_core.scss */
+body .recipe .recipe-label {
+  position: absolute;
+  bottom: 0px;
+  height: 33%;
+  width: 100%;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 5% 7.5%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+/* line 25, ../compass/sass/modules/_mixin.scss */
+body .recipe .recipe-label a {
+  text-decoration: none;
+  outline: none;
+}
+/* line 29, ../compass/sass/modules/_mixin.scss */
+body .recipe .recipe-label a:hover {
+  text-decoration: underline;
+}
+/* line 321, ../compass/sass/layout/_core.scss */
+body .recipe .recipe-label.small {
+  font-size: 12px;
+  line-height: 1.4;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 321, ../compass/sass/layout/_core.scss */
+  body .recipe .recipe-label.small {
+    font-size: 2.4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 321, ../compass/sass/layout/_core.scss */
+  body .recipe .recipe-label.small {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 321, ../compass/sass/layout/_core.scss */
+  body .recipe .recipe-label.small {
+    font-size: 1.2vw;
+  }
+}
+/* line 322, ../compass/sass/layout/_core.scss */
+body .recipe .recipe-label.smaller {
+  font-size: 12px;
+  line-height: 1.3;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 322, ../compass/sass/layout/_core.scss */
+  body .recipe .recipe-label.smaller {
+    font-size: 2.4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 322, ../compass/sass/layout/_core.scss */
+  body .recipe .recipe-label.smaller {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 322, ../compass/sass/layout/_core.scss */
+  body .recipe .recipe-label.smaller {
+    font-size: 1.2vw;
+  }
+}
+/* line 323, ../compass/sass/layout/_core.scss */
+body .recipe .recipe-label.smallest {
+  font-size: 11px;
+  line-height: 1.4;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 323, ../compass/sass/layout/_core.scss */
+  body .recipe .recipe-label.smallest {
+    font-size: 2.2vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 323, ../compass/sass/layout/_core.scss */
+  body .recipe .recipe-label.smallest {
+    font-size: 1.83333vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 323, ../compass/sass/layout/_core.scss */
+  body .recipe .recipe-label.smallest {
+    font-size: 1.1vw;
+  }
+}
+/* line 326, ../compass/sass/layout/_core.scss */
+body .recipe .recipe-over {
+  display: none;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+/* line 337, ../compass/sass/layout/_core.scss */
+body .recipe .recipe-over a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  padding: 40% 10% 5% 10%;
+}
+/* line 345, ../compass/sass/layout/_core.scss */
+body .recipe img {
+  position: absolute;
+  height: 100%;
+  min-width: 100%;
+  width: auto !important;
+}
+/* line 25, ../compass/sass/modules/_mixin.scss */
+body .crp_related a {
+  text-decoration: none;
+  outline: none;
+}
+/* line 29, ../compass/sass/modules/_mixin.scss */
+body .crp_related a:hover {
+  text-decoration: underline;
+}
+/* line 355, ../compass/sass/layout/_core.scss */
+body .crp_related a.crp_title {
+  display: none;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  padding: 40% 10% 5% 10%;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-decoration: none;
+}
+/* line 369, ../compass/sass/layout/_core.scss */
+body .advert {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5%;
+}
+/* line 373, ../compass/sass/layout/_core.scss */
+body .advert img {
+  width: 100%;
+  height: auto;
+}
+/* line 376, ../compass/sass/layout/_core.scss */
+body .logo {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10%;
+  text-align: center;
+}
+/* line 381, ../compass/sass/layout/_core.scss */
+body .logo img {
+  width: 80%;
+  margin: 0px auto;
+}
+/* line 385, ../compass/sass/layout/_core.scss */
+body footer {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  color: #ffffff;
+  background: #333333;
+  border-top: 6px solid #542f17;
+  margin-top: 50px;
+}
+/* line 25, ../compass/sass/modules/_mixin.scss */
+body footer a {
+  text-decoration: none;
+  outline: none;
+}
+/* line 29, ../compass/sass/modules/_mixin.scss */
+body footer a:hover {
+  text-decoration: underline;
+}
+/* line 394, ../compass/sass/layout/_core.scss */
+body footer .footer-inner {
+  border-top: 5px solid #ffffff;
+}
+/* line 397, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .newsletter {
+  padding: 3% 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+/* line 401, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .newsletter h2 {
+  color: #ffffff;
+  margin-bottom: 2%;
+  font-size: 20px;
+  line-height: 1.4;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 401, ../compass/sass/layout/_core.scss */
+  body footer .footer-inner .newsletter h2 {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 401, ../compass/sass/layout/_core.scss */
+  body footer .footer-inner .newsletter h2 {
+    font-size: 3.33333vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 401, ../compass/sass/layout/_core.scss */
+  body footer .footer-inner .newsletter h2 {
+    font-size: 2vw;
+  }
+}
+/* line 408, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .newsletter form .wpcf7-form-control-wrap {
+  width: 40.42553%;
+  float: left;
+  margin-right: 2.12766%;
+  clear: none;
+}
+/* line 412, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .newsletter form .wpcf7-form-control-wrap input[type="text"], body footer .footer-inner .newsletter form .wpcf7-form-control-wrap input[type="email"] {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 2.4% 3.6%;
+  margin-bottom: 0;
+}
+/* line 419, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .newsletter form input[type="submit"] {
+  width: 14.89362%;
+  float: right;
+  margin-right: 0;
+  padding: 1% 0%;
+}
+/* line 424, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .newsletter form .wpcf7-mail-sent-ok {
+  background: #cea851;
+  border: 0;
+}
+/* line 429, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .newsletter form .wpcf7-not-valid-tip {
+  color: #bf301a;
+  margin: 1% 0 0 0;
+  float: left;
+}
+/* line 435, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .newsletter form .wpcf7-validation-errors {
+  background: #bf301a;
+  border: none;
+}
+/* line 440, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .newsletter form .wpcf7-response-output {
+  padding: 1%;
+  margin: 2% 0 0 0;
+  clear: both;
+  float: left;
+  width: 100%;
+}
+/* line 448, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .newsletter form img.ajax-loader {
+  display: none;
+}
+/* line 454, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .footer-info {
+  width: 48.93617%;
+  float: left;
+  margin-right: 2.12766%;
+  padding: 3% 0;
+}
+/* line 459, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .footer-section {
+  width: 23.40426%;
+  float: left;
+  margin-right: 2.12766%;
+  padding: 3% 0;
+}
+/* line 463, ../compass/sass/layout/_core.scss */
+body footer .footer-inner .footer-section:last-of-type {
+  float: right;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 960px) {
+  /* line 474, ../compass/sass/layout/_core.scss */
+  body .body {
+    padding: 0 10px;
+  }
+  /* line 478, ../compass/sass/layout/_core.scss */
+  body .banner {
+    margin-bottom: 4%;
+  }
+  /* line 480, ../compass/sass/layout/_core.scss */
+  body footer {
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  /* line 489, ../compass/sass/layout/_core.scss */
+  body .banner .banner-inner {
+    height: 150px;
+  }
+  /* line 492, ../compass/sass/layout/_core.scss */
+  body .banner .banner-inner img {
+    width: auto;
+    position: relative;
+    left: 50%;
+    margin-left: -720px;
+  }
+}
+/* line 1, ../compass/sass/layout/_leftmenu.scss */
+.grey-box, body#home .recipe-finder, body#recipes .search-recipes, body#recipes .filter-list, body#tag .search-recipes, body#tag .filter-list, body#blog .search-recipes, body#blog .filter-list, body#single .search-recipes, body#single .filter-list, body#single-blog .search-recipes, body#single-blog .filter-list, body#recipes .num-results, body#tag .num-results, body#blog .num-results, body#single .num-results, body#single-blog .num-results, body#single-recipe .cols .col2 .recipe-info {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 6% 9%;
+  background: #fafafa;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 5%;
+  color: #333333;
+}
+/* line 25, ../compass/sass/modules/_mixin.scss */
+.grey-box a, body#home .recipe-finder a, body#recipes .search-recipes a, body#recipes .filter-list a, body#tag .search-recipes a, body#tag .filter-list a, body#blog .search-recipes a, body#blog .filter-list a, body#single .search-recipes a, body#single .filter-list a, body#single-blog .search-recipes a, body#single-blog .filter-list a, body#recipes .num-results a, body#tag .num-results a, body#blog .num-results a, body#single .num-results a, body#single-blog .num-results a, body#single-recipe .cols .col2 .recipe-info a {
+  text-decoration: none;
+  outline: none;
+}
+/* line 29, ../compass/sass/modules/_mixin.scss */
+.grey-box a:hover, body#home .recipe-finder a:hover, body#recipes .search-recipes a:hover, body#recipes .filter-list a:hover, body#tag .search-recipes a:hover, body#tag .filter-list a:hover, body#blog .search-recipes a:hover, body#blog .filter-list a:hover, body#single .search-recipes a:hover, body#single .filter-list a:hover, body#single-blog .search-recipes a:hover, body#single-blog .filter-list a:hover, body#recipes .num-results a:hover, body#tag .num-results a:hover, body#blog .num-results a:hover, body#single .num-results a:hover, body#single-blog .num-results a:hover, body#single-recipe .cols .col2 .recipe-info a:hover {
+  text-decoration: underline;
+}
+/* line 12, ../compass/sass/layout/_leftmenu.scss */
+.grey-box .grey-box-header, body#home .recipe-finder .grey-box-header, body#recipes .search-recipes .grey-box-header, body#recipes .filter-list .grey-box-header, body#tag .search-recipes .grey-box-header, body#tag .filter-list .grey-box-header, body#blog .search-recipes .grey-box-header, body#blog .filter-list .grey-box-header, body#single .search-recipes .grey-box-header, body#single .filter-list .grey-box-header, body#single-blog .search-recipes .grey-box-header, body#single-blog .filter-list .grey-box-header, body#recipes .num-results .grey-box-header, body#tag .num-results .grey-box-header, body#blog .num-results .grey-box-header, body#single .num-results .grey-box-header, body#single-blog .num-results .grey-box-header, body#single-recipe .cols .col2 .recipe-info .grey-box-header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #bf301a;
+  font-weight: bold;
+  margin-bottom: 6%;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 12, ../compass/sass/layout/_leftmenu.scss */
+  .grey-box .grey-box-header, body#home .recipe-finder .grey-box-header, body#recipes .search-recipes .grey-box-header, body#recipes .filter-list .grey-box-header, body#tag .search-recipes .grey-box-header, body#tag .filter-list .grey-box-header, body#blog .search-recipes .grey-box-header, body#blog .filter-list .grey-box-header, body#single .search-recipes .grey-box-header, body#single .filter-list .grey-box-header, body#single-blog .search-recipes .grey-box-header, body#single-blog .filter-list .grey-box-header, body#recipes .num-results .grey-box-header, body#tag .num-results .grey-box-header, body#blog .num-results .grey-box-header, body#single .num-results .grey-box-header, body#single-blog .num-results .grey-box-header, body#single-recipe .cols .col2 .recipe-info .grey-box-header {
+    font-size: 3.2vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 12, ../compass/sass/layout/_leftmenu.scss */
+  .grey-box .grey-box-header, body#home .recipe-finder .grey-box-header, body#recipes .search-recipes .grey-box-header, body#recipes .filter-list .grey-box-header, body#tag .search-recipes .grey-box-header, body#tag .filter-list .grey-box-header, body#blog .search-recipes .grey-box-header, body#blog .filter-list .grey-box-header, body#single .search-recipes .grey-box-header, body#single .filter-list .grey-box-header, body#single-blog .search-recipes .grey-box-header, body#single-blog .filter-list .grey-box-header, body#recipes .num-results .grey-box-header, body#tag .num-results .grey-box-header, body#blog .num-results .grey-box-header, body#single .num-results .grey-box-header, body#single-blog .num-results .grey-box-header, body#single-recipe .cols .col2 .recipe-info .grey-box-header {
+    font-size: 2.66667vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 12, ../compass/sass/layout/_leftmenu.scss */
+  .grey-box .grey-box-header, body#home .recipe-finder .grey-box-header, body#recipes .search-recipes .grey-box-header, body#recipes .filter-list .grey-box-header, body#tag .search-recipes .grey-box-header, body#tag .filter-list .grey-box-header, body#blog .search-recipes .grey-box-header, body#blog .filter-list .grey-box-header, body#single .search-recipes .grey-box-header, body#single .filter-list .grey-box-header, body#single-blog .search-recipes .grey-box-header, body#single-blog .filter-list .grey-box-header, body#recipes .num-results .grey-box-header, body#tag .num-results .grey-box-header, body#blog .num-results .grey-box-header, body#single .num-results .grey-box-header, body#single-blog .num-results .grey-box-header, body#single-recipe .cols .col2 .recipe-info .grey-box-header {
+    font-size: 1.6vw;
+  }
+}
+/* line 21, ../compass/sass/layout/_leftmenu.scss */
+.grey-box .label-header, body#home .recipe-finder .label-header, body#recipes .search-recipes .label-header, body#recipes .filter-list .label-header, body#tag .search-recipes .label-header, body#tag .filter-list .label-header, body#blog .search-recipes .label-header, body#blog .filter-list .label-header, body#single .search-recipes .label-header, body#single .filter-list .label-header, body#single-blog .search-recipes .label-header, body#single-blog .filter-list .label-header, body#recipes .num-results .label-header, body#tag .num-results .label-header, body#blog .num-results .label-header, body#single .num-results .label-header, body#single-blog .num-results .label-header, body#single-recipe .cols .col2 .recipe-info .label-header {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 4%;
+}
+/* line 26, ../compass/sass/layout/_leftmenu.scss */
+.grey-box label, body#home .recipe-finder label, body#recipes .search-recipes label, body#recipes .filter-list label, body#tag .search-recipes label, body#tag .filter-list label, body#blog .search-recipes label, body#blog .filter-list label, body#single .search-recipes label, body#single .filter-list label, body#single-blog .search-recipes label, body#single-blog .filter-list label, body#recipes .num-results label, body#tag .num-results label, body#blog .num-results label, body#single .num-results label, body#single-blog .num-results label, body#single-recipe .cols .col2 .recipe-info label {
+  margin-right: 10%;
+}
+/* line 30, ../compass/sass/layout/_leftmenu.scss */
+.grey-box ul.filter, body#home .recipe-finder ul.filter, body#recipes .search-recipes ul.filter, body#recipes .filter-list ul.filter, body#tag .search-recipes ul.filter, body#tag .filter-list ul.filter, body#blog .search-recipes ul.filter, body#blog .filter-list ul.filter, body#single .search-recipes ul.filter, body#single .filter-list ul.filter, body#single-blog .search-recipes ul.filter, body#single-blog .filter-list ul.filter, body#recipes .num-results ul.filter, body#tag .num-results ul.filter, body#blog .num-results ul.filter, body#single .num-results ul.filter, body#single-blog .num-results ul.filter, body#single-recipe .cols .col2 .recipe-info ul.filter {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 2;
+}
+/* line 36, ../compass/sass/layout/_leftmenu.scss */
+.grey-box ul.filter li, body#home .recipe-finder ul.filter li, body#recipes .search-recipes ul.filter li, body#recipes .filter-list ul.filter li, body#tag .search-recipes ul.filter li, body#tag .filter-list ul.filter li, body#blog .search-recipes ul.filter li, body#blog .filter-list ul.filter li, body#single .search-recipes ul.filter li, body#single .filter-list ul.filter li, body#single-blog .search-recipes ul.filter li, body#single-blog .filter-list ul.filter li, body#recipes .num-results ul.filter li, body#tag .num-results ul.filter li, body#blog .num-results ul.filter li, body#single .num-results ul.filter li, body#single-blog .num-results ul.filter li, body#single-recipe .cols .col2 .recipe-info ul.filter li {
+  border-bottom: 1px solid #dbdbdb;
+}
+/* line 39, ../compass/sass/layout/_leftmenu.scss */
+.grey-box ul.filter li a, body#home .recipe-finder ul.filter li a, body#recipes .search-recipes ul.filter li a, body#recipes .filter-list ul.filter li a, body#tag .search-recipes ul.filter li a, body#tag .filter-list ul.filter li a, body#blog .search-recipes ul.filter li a, body#blog .filter-list ul.filter li a, body#single .search-recipes ul.filter li a, body#single .filter-list ul.filter li a, body#single-blog .search-recipes ul.filter li a, body#single-blog .filter-list ul.filter li a, body#recipes .num-results ul.filter li a, body#tag .num-results ul.filter li a, body#blog .num-results ul.filter li a, body#single .num-results ul.filter li a, body#single-blog .num-results ul.filter li a, body#single-recipe .cols .col2 .recipe-info ul.filter li a {
+  display: block;
+}
+/* line 42, ../compass/sass/layout/_leftmenu.scss */
+.grey-box ul.filter li.nested > a:after, body#home .recipe-finder ul.filter li.nested > a:after, body#recipes .search-recipes ul.filter li.nested > a:after, body#recipes .filter-list ul.filter li.nested > a:after, body#tag .search-recipes ul.filter li.nested > a:after, body#tag .filter-list ul.filter li.nested > a:after, body#blog .search-recipes ul.filter li.nested > a:after, body#blog .filter-list ul.filter li.nested > a:after, body#single .search-recipes ul.filter li.nested > a:after, body#single .filter-list ul.filter li.nested > a:after, body#single-blog .search-recipes ul.filter li.nested > a:after, body#single-blog .filter-list ul.filter li.nested > a:after, body#recipes .num-results ul.filter li.nested > a:after, body#tag .num-results ul.filter li.nested > a:after, body#blog .num-results ul.filter li.nested > a:after, body#single .num-results ul.filter li.nested > a:after, body#single-blog .num-results ul.filter li.nested > a:after, body#single-recipe .cols .col2 .recipe-info ul.filter li.nested > a:after {
+  content: "+";
+  float: right;
+}
+/* line 48, ../compass/sass/layout/_leftmenu.scss */
+.grey-box ul.filter li ul, body#home .recipe-finder ul.filter li ul, body#recipes .search-recipes ul.filter li ul, body#recipes .filter-list ul.filter li ul, body#tag .search-recipes ul.filter li ul, body#tag .filter-list ul.filter li ul, body#blog .search-recipes ul.filter li ul, body#blog .filter-list ul.filter li ul, body#single .search-recipes ul.filter li ul, body#single .filter-list ul.filter li ul, body#single-blog .search-recipes ul.filter li ul, body#single-blog .filter-list ul.filter li ul, body#recipes .num-results ul.filter li ul, body#tag .num-results ul.filter li ul, body#blog .num-results ul.filter li ul, body#single .num-results ul.filter li ul, body#single-blog .num-results ul.filter li ul, body#single-recipe .cols .col2 .recipe-info ul.filter li ul {
+  display: none;
+  list-style: none;
+  background: #dbdbdb;
+  padding: 4%;
+  margin: 0px;
+  line-height: 1.6;
+}
+/* line 56, ../compass/sass/layout/_leftmenu.scss */
+.grey-box ul.filter li ul li, body#home .recipe-finder ul.filter li ul li, body#recipes .search-recipes ul.filter li ul li, body#recipes .filter-list ul.filter li ul li, body#tag .search-recipes ul.filter li ul li, body#tag .filter-list ul.filter li ul li, body#blog .search-recipes ul.filter li ul li, body#blog .filter-list ul.filter li ul li, body#single .search-recipes ul.filter li ul li, body#single .filter-list ul.filter li ul li, body#single-blog .search-recipes ul.filter li ul li, body#single-blog .filter-list ul.filter li ul li, body#recipes .num-results ul.filter li ul li, body#tag .num-results ul.filter li ul li, body#blog .num-results ul.filter li ul li, body#single .num-results ul.filter li ul li, body#single-blog .num-results ul.filter li ul li, body#single-recipe .cols .col2 .recipe-info ul.filter li ul li {
+  border: 0px;
+}
+/* line 58, ../compass/sass/layout/_leftmenu.scss */
+.grey-box ul.filter li ul li a:after, body#home .recipe-finder ul.filter li ul li a:after, body#recipes .search-recipes ul.filter li ul li a:after, body#recipes .filter-list ul.filter li ul li a:after, body#tag .search-recipes ul.filter li ul li a:after, body#tag .filter-list ul.filter li ul li a:after, body#blog .search-recipes ul.filter li ul li a:after, body#blog .filter-list ul.filter li ul li a:after, body#single .search-recipes ul.filter li ul li a:after, body#single .filter-list ul.filter li ul li a:after, body#single-blog .search-recipes ul.filter li ul li a:after, body#single-blog .filter-list ul.filter li ul li a:after, body#recipes .num-results ul.filter li ul li a:after, body#tag .num-results ul.filter li ul li a:after, body#blog .num-results ul.filter li ul li a:after, body#single .num-results ul.filter li ul li a:after, body#single-blog .num-results ul.filter li ul li a:after, body#single-recipe .cols .col2 .recipe-info ul.filter li ul li a:after {
+  content: none;
+}
+/* line 63, ../compass/sass/layout/_leftmenu.scss */
+.grey-box ul.filter li.active > a, body#home .recipe-finder ul.filter li.active > a, body#recipes .search-recipes ul.filter li.active > a, body#recipes .filter-list ul.filter li.active > a, body#tag .search-recipes ul.filter li.active > a, body#tag .filter-list ul.filter li.active > a, body#blog .search-recipes ul.filter li.active > a, body#blog .filter-list ul.filter li.active > a, body#single .search-recipes ul.filter li.active > a, body#single .filter-list ul.filter li.active > a, body#single-blog .search-recipes ul.filter li.active > a, body#single-blog .filter-list ul.filter li.active > a, body#recipes .num-results ul.filter li.active > a, body#tag .num-results ul.filter li.active > a, body#blog .num-results ul.filter li.active > a, body#single .num-results ul.filter li.active > a, body#single-blog .num-results ul.filter li.active > a, body#single-recipe .cols .col2 .recipe-info ul.filter li.active > a {
+  font-weight: bold;
+  color: #bf301a;
+}
+/* line 67, ../compass/sass/layout/_leftmenu.scss */
+.grey-box ul.filter li.nested.active ul, body#home .recipe-finder ul.filter li.nested.active ul, body#recipes .search-recipes ul.filter li.nested.active ul, body#recipes .filter-list ul.filter li.nested.active ul, body#tag .search-recipes ul.filter li.nested.active ul, body#tag .filter-list ul.filter li.nested.active ul, body#blog .search-recipes ul.filter li.nested.active ul, body#blog .filter-list ul.filter li.nested.active ul, body#single .search-recipes ul.filter li.nested.active ul, body#single .filter-list ul.filter li.nested.active ul, body#single-blog .search-recipes ul.filter li.nested.active ul, body#single-blog .filter-list ul.filter li.nested.active ul, body#recipes .num-results ul.filter li.nested.active ul, body#tag .num-results ul.filter li.nested.active ul, body#blog .num-results ul.filter li.nested.active ul, body#single .num-results ul.filter li.nested.active ul, body#single-blog .num-results ul.filter li.nested.active ul, body#single-recipe .cols .col2 .recipe-info ul.filter li.nested.active ul {
+  display: block;
+}
+/* line 68, ../compass/sass/layout/_leftmenu.scss */
+.grey-box ul.filter li.nested.active > a:after, body#home .recipe-finder ul.filter li.nested.active > a:after, body#recipes .search-recipes ul.filter li.nested.active > a:after, body#recipes .filter-list ul.filter li.nested.active > a:after, body#tag .search-recipes ul.filter li.nested.active > a:after, body#tag .filter-list ul.filter li.nested.active > a:after, body#blog .search-recipes ul.filter li.nested.active > a:after, body#blog .filter-list ul.filter li.nested.active > a:after, body#single .search-recipes ul.filter li.nested.active > a:after, body#single .filter-list ul.filter li.nested.active > a:after, body#single-blog .search-recipes ul.filter li.nested.active > a:after, body#single-blog .filter-list ul.filter li.nested.active > a:after, body#recipes .num-results ul.filter li.nested.active > a:after, body#tag .num-results ul.filter li.nested.active > a:after, body#blog .num-results ul.filter li.nested.active > a:after, body#single .num-results ul.filter li.nested.active > a:after, body#single-blog .num-results ul.filter li.nested.active > a:after, body#single-recipe .cols .col2 .recipe-info ul.filter li.nested.active > a:after {
+  content: none;
+}
+
+/* line 75, ../compass/sass/layout/_leftmenu.scss */
+.col-right .advert {
+  margin-bottom: 6%;
+}
+/* line 78, ../compass/sass/layout/_leftmenu.scss */
+.col-right .cols > div {
+  margin-bottom: 6%;
+}
+
+/* line 4, ../compass/sass/pages/_home.scss */
+body#home .banner .banner-inner, body#home .banner #swiper-banner {
+  max-height: 506px;
+  overflow: hidden;
+  border-bottom: 5px solid #ffffff;
+}
+/* line 9, ../compass/sass/pages/_home.scss */
+body#home .banner .banner-inner img, body#home .banner #swiper-banner img {
+  width: 100%;
+}
+/* line 15, ../compass/sass/pages/_home.scss */
+body#home h1 {
+  font-size: 37px;
+  line-height: 1.4;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 15, ../compass/sass/pages/_home.scss */
+  body#home h1 {
+    font-size: 7.4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 15, ../compass/sass/pages/_home.scss */
+  body#home h1 {
+    font-size: 6.16667vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 15, ../compass/sass/pages/_home.scss */
+  body#home h1 {
+    font-size: 3.7vw;
+  }
+}
+/* line 19, ../compass/sass/pages/_home.scss */
+body#home article.home {
+  width: 82.97872%;
+  float: left;
+  margin-right: 2.12766%;
+  padding: 5% 5% 0 5%;
+  background: url(../images/background-homepage.png) top left no-repeat;
+  background-size: contain;
+  margin-top: -22%;
+}
+/* line 27, ../compass/sass/pages/_home.scss */
+body#home .recipe-finder {
+  padding: 3% 3% 1% 3%;
+  margin-bottom: 2%;
+}
+/* line 33, ../compass/sass/pages/_home.scss */
+body#home .recipe-finder .recipe:last-of-type {
+  display: none;
+}
+/* line 39, ../compass/sass/pages/_home.scss */
+body#home .swiper-pagination {
+  width: 15%;
+  left: 85%;
+  margin-top: -10%;
+  text-align: right;
+}
+/* line 45, ../compass/sass/pages/_home.scss */
+body#home .swiper-pagination .swiper-pagination-bullet {
+  background-color: #fff;
+  border: 3px solid #fff;
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  margin: 0 4%;
+}
+/* line 54, ../compass/sass/pages/_home.scss */
+body#home .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #bf301a;
+}
+@media screen and (max-width: 1440px) {
+  /* line 66, ../compass/sass/pages/_home.scss */
+  body#home .banner #swiper-banner .swiper-slide {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+  }
+  /* line 70, ../compass/sass/pages/_home.scss */
+  body#home .banner #swiper-banner .swiper-slide img {
+    width: auto;
+    position: relative;
+    left: 50%;
+    margin-left: -720px;
+  }
+}
+@media screen and (max-width: 960px) {
+  /* line 82, ../compass/sass/pages/_home.scss */
+  body#home article.home {
+    margin-top: -21.3%;
+  }
+  /* line 84, ../compass/sass/pages/_home.scss */
+  body#home .banner {
+    margin-bottom: 4%;
+  }
+  /* line 87, ../compass/sass/pages/_home.scss */
+  body#home .banner #swiper-banner {
+    max-height: 300px;
+  }
+  /* line 93, ../compass/sass/pages/_home.scss */
+  body#home .banner #swiper-banner .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    left: auto;
+    margin-left: 0px;
+  }
+  /* line 103, ../compass/sass/pages/_home.scss */
+  body#home .swiper-pagination {
+    left: 82% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 109, ../compass/sass/pages/_home.scss */
+  body#home article.home {
+    margin-top: 0 !important;
+    width: 100% !important;
+    padding: 0px 2% !important;
+    background: none !important;
+    margin-bottom: 2% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 120, ../compass/sass/pages/_home.scss */
+  body#home .banner #swiper-banner {
+    max-height: 200px;
+  }
+}
+
+/* line 8, ../compass/sass/pages/_recipes.scss */
+body#recipes .search-recipes ul li:last-of-type, body#recipes .filter-list ul li:last-of-type, body#tag .search-recipes ul li:last-of-type, body#tag .filter-list ul li:last-of-type, body#blog .search-recipes ul li:last-of-type, body#blog .filter-list ul li:last-of-type, body#single .search-recipes ul li:last-of-type, body#single .filter-list ul li:last-of-type, body#single-blog .search-recipes ul li:last-of-type, body#single-blog .filter-list ul li:last-of-type {
+  border: 0;
+}
+/* line 14, ../compass/sass/pages/_recipes.scss */
+body#recipes .search-recipes .mobile-filter, body#recipes .filter-list .mobile-filter, body#tag .search-recipes .mobile-filter, body#tag .filter-list .mobile-filter, body#blog .search-recipes .mobile-filter, body#blog .filter-list .mobile-filter, body#single .search-recipes .mobile-filter, body#single .filter-list .mobile-filter, body#single-blog .search-recipes .mobile-filter, body#single-blog .filter-list .mobile-filter {
+  display: none;
+}
+/* line 20, ../compass/sass/pages/_recipes.scss */
+body#recipes .search-recipes .button, body#recipes .search-recipes .search-reset, body#tag .search-recipes .button, body#tag .search-recipes .search-reset, body#blog .search-recipes .button, body#blog .search-recipes .search-reset, body#single .search-recipes .button, body#single .search-recipes .search-reset, body#single-blog .search-recipes .button, body#single-blog .search-recipes .search-reset {
+  display: inline;
+  cursor: pointer;
+}
+/* line 24, ../compass/sass/pages/_recipes.scss */
+body#recipes .search-recipes .button input, body#recipes .search-recipes .search-reset input, body#tag .search-recipes .button input, body#tag .search-recipes .search-reset input, body#blog .search-recipes .button input, body#blog .search-recipes .search-reset input, body#single .search-recipes .button input, body#single .search-recipes .search-reset input, body#single-blog .search-recipes .button input, body#single-blog .search-recipes .search-reset input {
+  cursor: pointer;
+}
+/* line 29, ../compass/sass/pages/_recipes.scss */
+body#recipes .search-recipes .search-reset, body#tag .search-recipes .search-reset, body#blog .search-recipes .search-reset, body#single .search-recipes .search-reset, body#single-blog .search-recipes .search-reset {
+  color: #bf301a;
+  text-align: right;
+  position: absolute;
+  bottom: 10%;
+  right: 6%;
+}
+/* line 38, ../compass/sass/pages/_recipes.scss */
+body#recipes .num-results, body#tag .num-results, body#blog .num-results, body#single .num-results, body#single-blog .num-results {
+  padding: 1% 2%;
+  margin-bottom: 2%;
+}
+/* line 43, ../compass/sass/pages/_recipes.scss */
+body#recipes .num-results .results-filtered, body#tag .num-results .results-filtered, body#blog .num-results .results-filtered, body#single .num-results .results-filtered, body#single-blog .num-results .results-filtered {
+  color: #bf301a;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: right;
+  font-size: 12px;
+  line-height: 1.4;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 43, ../compass/sass/pages/_recipes.scss */
+  body#recipes .num-results .results-filtered, body#tag .num-results .results-filtered, body#blog .num-results .results-filtered, body#single .num-results .results-filtered, body#single-blog .num-results .results-filtered {
+    font-size: 2.4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 43, ../compass/sass/pages/_recipes.scss */
+  body#recipes .num-results .results-filtered, body#tag .num-results .results-filtered, body#blog .num-results .results-filtered, body#single .num-results .results-filtered, body#single-blog .num-results .results-filtered {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 43, ../compass/sass/pages/_recipes.scss */
+  body#recipes .num-results .results-filtered, body#tag .num-results .results-filtered, body#blog .num-results .results-filtered, body#single .num-results .results-filtered, body#single-blog .num-results .results-filtered {
+    font-size: 1.2vw;
+  }
+}
+/* line 52, ../compass/sass/pages/_recipes.scss */
+body#recipes .no-results, body#tag .no-results, body#blog .no-results, body#single .no-results, body#single-blog .no-results {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5% 2% 5% 30%;
+  background: url(../images/ed-no-results.jpg) bottom left no-repeat;
+  background-size: contain;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+/* line 62, ../compass/sass/pages/_recipes.scss */
+body#recipes .pagination, body#tag .pagination, body#blog .pagination, body#single .pagination, body#single-blog .pagination {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+/* line 25, ../compass/sass/modules/_mixin.scss */
+body#recipes .pagination a, body#tag .pagination a, body#blog .pagination a, body#single .pagination a, body#single-blog .pagination a {
+  text-decoration: none;
+  outline: none;
+}
+/* line 29, ../compass/sass/modules/_mixin.scss */
+body#recipes .pagination a:hover, body#tag .pagination a:hover, body#blog .pagination a:hover, body#single .pagination a:hover, body#single-blog .pagination a:hover {
+  text-decoration: underline;
+}
+/* line 67, ../compass/sass/pages/_recipes.scss */
+body#recipes .pagination a.page-numbers, body#recipes .pagination span.page-numbers, body#tag .pagination a.page-numbers, body#tag .pagination span.page-numbers, body#blog .pagination a.page-numbers, body#blog .pagination span.page-numbers, body#single .pagination a.page-numbers, body#single .pagination span.page-numbers, body#single-blog .pagination a.page-numbers, body#single-blog .pagination span.page-numbers {
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  background: #fafafa;
+  padding: 1% 0%;
+  width: 5%;
+  display: inline-block;
+  margin: 0 0.5%;
+}
+/* line 76, ../compass/sass/pages/_recipes.scss */
+body#recipes .pagination a.page-numbers.current, body#recipes .pagination span.page-numbers.current, body#tag .pagination a.page-numbers.current, body#tag .pagination span.page-numbers.current, body#blog .pagination a.page-numbers.current, body#blog .pagination span.page-numbers.current, body#single .pagination a.page-numbers.current, body#single .pagination span.page-numbers.current, body#single-blog .pagination a.page-numbers.current, body#single-blog .pagination span.page-numbers.current {
+  background: #bf301a;
+  border: 1px solid #bf301a;
+  color: #ffffff;
+}
+
+/* line 91, ../compass/sass/pages/_recipes.scss */
+body#single-recipe .recipe-image {
+  width: 95.74468%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 94, ../compass/sass/pages/_recipes.scss */
+body#single-recipe .recipe-image img {
+  width: 100%;
+}
+/* line 99, ../compass/sass/pages/_recipes.scss */
+body#single-recipe .recipe-share {
+  width: 95.74468%;
+  float: left;
+  margin-right: 2.12766%;
+  background: #ededed;
+  padding: 1%;
+  text-align: center;
+}
+/* line 106, ../compass/sass/pages/_recipes.scss */
+body#single-recipe .recipe-tags {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 2% 0;
+  color: #542f17;
+}
+/* line 25, ../compass/sass/modules/_mixin.scss */
+body#single-recipe .recipe-tags a {
+  text-decoration: none;
+  outline: none;
+}
+/* line 29, ../compass/sass/modules/_mixin.scss */
+body#single-recipe .recipe-tags a:hover {
+  text-decoration: underline;
+}
+/* line 112, ../compass/sass/pages/_recipes.scss */
+body#single-recipe .recipe-tags a {
+  color: #bf301a;
+}
+/* line 115, ../compass/sass/pages/_recipes.scss */
+body#single-recipe .cols .col2 .recipe-info {
+  width: 31.91489%;
+  float: left;
+  margin-right: 2.12766%;
+  padding: 2% 0 !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 10px;
+  line-height: 2.6;
+  vertical-align: middle;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 115, ../compass/sass/pages/_recipes.scss */
+  body#single-recipe .cols .col2 .recipe-info {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 115, ../compass/sass/pages/_recipes.scss */
+  body#single-recipe .cols .col2 .recipe-info {
+    font-size: 1.66667vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 115, ../compass/sass/pages/_recipes.scss */
+  body#single-recipe .cols .col2 .recipe-info {
+    font-size: 1vw;
+  }
+}
+/* line 125, ../compass/sass/pages/_recipes.scss */
+body#single-recipe .cols .col2 .recipe-info:nth-of-type(3) {
+  float: right;
+  margin-right: 0;
+}
+/* line 129, ../compass/sass/pages/_recipes.scss */
+body#single-recipe .cols .col2 .recipe-info span {
+  color: #bf301a;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1;
+  vertical-align: middle;
+  margin: 0 2%;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 129, ../compass/sass/pages/_recipes.scss */
+  body#single-recipe .cols .col2 .recipe-info span {
+    font-size: 5.2vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 129, ../compass/sass/pages/_recipes.scss */
+  body#single-recipe .cols .col2 .recipe-info span {
+    font-size: 4.33333vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 129, ../compass/sass/pages/_recipes.scss */
+  body#single-recipe .cols .col2 .recipe-info span {
+    font-size: 2.6vw;
+  }
+}
+/* line 139, ../compass/sass/pages/_recipes.scss */
+body#single-recipe p.intro.recipe-intro {
+  margin-bottom: 5%;
+  clear: both;
+}
+/* line 144, ../compass/sass/pages/_recipes.scss */
+body#single-recipe .col-header {
+  margin-bottom: 3%;
+}
+/* line 148, ../compass/sass/pages/_recipes.scss */
+body#single-recipe div.ingredients {
+  width: 40.42553%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 151, ../compass/sass/pages/_recipes.scss */
+body#single-recipe div.ingredients ul.ingredients {
+  list-style: none;
+  padding: 0;
+}
+/* line 155, ../compass/sass/pages/_recipes.scss */
+body#single-recipe div.ingredients ul.ingredients li {
+  padding: 3% 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+/* line 159, ../compass/sass/pages/_recipes.scss */
+body#single-recipe div.ingredients ul.ingredients li:last-of-type {
+  border-bottom: 0px;
+}
+/* line 166, ../compass/sass/pages/_recipes.scss */
+body#single-recipe .related-recipes {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 2px solid #542f17;
+  padding-top: 3%;
+  margin-bottom: 4%;
+}
+/* line 172, ../compass/sass/pages/_recipes.scss */
+body#single-recipe .related-recipes .related-recipes-header {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: #542f17;
+  font-size: 20px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 2%;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 172, ../compass/sass/pages/_recipes.scss */
+  body#single-recipe .related-recipes .related-recipes-header {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 172, ../compass/sass/pages/_recipes.scss */
+  body#single-recipe .related-recipes .related-recipes-header {
+    font-size: 3.33333vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 172, ../compass/sass/pages/_recipes.scss */
+  body#single-recipe .related-recipes .related-recipes-header {
+    font-size: 2vw;
+  }
+}
+
+/* line 3, ../compass/sass/pages/_blog.scss */
+body#blog .article-listing, body#events .article-listing, body#tag .article-listing {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+}
+/* line 9, ../compass/sass/pages/_blog.scss */
+body#blog .article-listing .article-image, body#events .article-listing .article-image, body#tag .article-listing .article-image {
+  width: 14.89362%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 12, ../compass/sass/pages/_blog.scss */
+body#blog .article-listing .article-image img, body#events .article-listing .article-image img, body#tag .article-listing .article-image img {
+  width: 100%;
+  height: auto;
+}
+/* line 18, ../compass/sass/pages/_blog.scss */
+body#blog .article-listing .article-info, body#events .article-listing .article-info, body#tag .article-listing .article-info {
+  width: 82.97872%;
+  float: right;
+  margin-right: 0;
+}
+/* line 25, ../compass/sass/modules/_mixin.scss */
+body#blog .article-listing .article-info a, body#events .article-listing .article-info a, body#tag .article-listing .article-info a {
+  text-decoration: none;
+  outline: none;
+}
+/* line 29, ../compass/sass/modules/_mixin.scss */
+body#blog .article-listing .article-info a:hover, body#events .article-listing .article-info a:hover, body#tag .article-listing .article-info a:hover {
+  text-decoration: underline;
+}
+/* line 23, ../compass/sass/pages/_blog.scss */
+body#blog .article-listing .article-info .article-title h2, body#events .article-listing .article-info .article-title h2, body#tag .article-listing .article-info .article-title h2 {
+  font-family: 'Open sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #333333;
+  text-transform: none;
+  font-weight: normal;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 23, ../compass/sass/pages/_blog.scss */
+  body#blog .article-listing .article-info .article-title h2, body#events .article-listing .article-info .article-title h2, body#tag .article-listing .article-info .article-title h2 {
+    font-size: 3.6vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 23, ../compass/sass/pages/_blog.scss */
+  body#blog .article-listing .article-info .article-title h2, body#events .article-listing .article-info .article-title h2, body#tag .article-listing .article-info .article-title h2 {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 23, ../compass/sass/pages/_blog.scss */
+  body#blog .article-listing .article-info .article-title h2, body#events .article-listing .article-info .article-title h2, body#tag .article-listing .article-info .article-title h2 {
+    font-size: 1.8vw;
+  }
+}
+/* line 30, ../compass/sass/pages/_blog.scss */
+body#blog .article-listing .article-info .article-title h2 a, body#events .article-listing .article-info .article-title h2 a, body#tag .article-listing .article-info .article-title h2 a {
+  color: #333333;
+}
+/* line 34, ../compass/sass/pages/_blog.scss */
+body#blog .article-listing .article-info .article-date, body#events .article-listing .article-info .article-date, body#tag .article-listing .article-info .article-date {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 34, ../compass/sass/pages/_blog.scss */
+  body#blog .article-listing .article-info .article-date, body#events .article-listing .article-info .article-date, body#tag .article-listing .article-info .article-date {
+    font-size: 2.4vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 34, ../compass/sass/pages/_blog.scss */
+  body#blog .article-listing .article-info .article-date, body#events .article-listing .article-info .article-date, body#tag .article-listing .article-info .article-date {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 34, ../compass/sass/pages/_blog.scss */
+  body#blog .article-listing .article-info .article-date, body#events .article-listing .article-info .article-date, body#tag .article-listing .article-info .article-date {
+    font-size: 1.2vw;
+  }
+}
+/* line 41, ../compass/sass/pages/_blog.scss */
+body#blog .article-listing .article-info a, body#events .article-listing .article-info a, body#tag .article-listing .article-info a {
+  color: #bf301a;
+}
+
+/* line 51, ../compass/sass/pages/_blog.scss */
+body#single-blog article, body#single article {
+  font-size: 16px;
+  line-height: 1.4;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 51, ../compass/sass/pages/_blog.scss */
+  body#single-blog article, body#single article {
+    font-size: 3.2vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 51, ../compass/sass/pages/_blog.scss */
+  body#single-blog article, body#single article {
+    font-size: 2.66667vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 51, ../compass/sass/pages/_blog.scss */
+  body#single-blog article, body#single article {
+    font-size: 1.6vw;
+  }
+}
+/* line 25, ../compass/sass/modules/_mixin.scss */
+body#single-blog article a, body#single article a {
+  text-decoration: none;
+  outline: none;
+}
+/* line 29, ../compass/sass/modules/_mixin.scss */
+body#single-blog article a:hover, body#single article a:hover {
+  text-decoration: underline;
+}
+/* line 59, ../compass/sass/pages/_blog.scss */
+body#single-blog article p, body#single article p {
+  margin-bottom: 2.5%;
+}
+/* line 63, ../compass/sass/pages/_blog.scss */
+body#single-blog article a, body#single article a {
+  color: #e7af5e;
+}
+/* line 67, ../compass/sass/pages/_blog.scss */
+body#single-blog article div.article-social, body#single article div.article-social {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1% 0;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 4%;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.4;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 67, ../compass/sass/pages/_blog.scss */
+  body#single-blog article div.article-social, body#single article div.article-social {
+    font-size: 2.8vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 670px) {
+  /* line 67, ../compass/sass/pages/_blog.scss */
+  body#single-blog article div.article-social, body#single article div.article-social {
+    font-size: 2.33333vw;
+  }
+}
+@media (min-width: 671px) and (max-width: 1024px) {
+  /* line 67, ../compass/sass/pages/_blog.scss */
+  body#single-blog article div.article-social, body#single article div.article-social {
+    font-size: 1.4vw;
+  }
+}
+/* line 77, ../compass/sass/pages/_blog.scss */
+body#single-blog article div.article-float, body#single article div.article-float {
+  max-width: 50%;
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+/* line 83, ../compass/sass/pages/_blog.scss */
+body#single-blog article div.article-float img, body#single article div.article-float img {
+  width: 100%;
+}
+/* line 86, ../compass/sass/pages/_blog.scss */
+body#single-blog article .tags, body#single article .tags {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 1px solid #dbdbdb;
+  margin-top: 2%;
+  padding-top: 4%;
+  color: #e7af5e;
+}
+/* line 93, ../compass/sass/pages/_blog.scss */
+body#single-blog article .tags span, body#single article .tags span {
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 3, ../compass/sass/pages/_magazine.scss */
+body#magazine .magazine-content {
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  margin: 5% 0;
+}
+/* line 9, ../compass/sass/pages/_magazine.scss */
+body#magazine .magazine-content .magazine-week {
+  display: table-cell;
+  padding: 2% 4%;
+  border-right: 1px solid #dbdbdb;
+}
+/* line 15, ../compass/sass/pages/_magazine.scss */
+body#magazine .magazine-content .magazine-week:last-of-type {
+  border: 0px;
+}
+/* line 19, ../compass/sass/pages/_magazine.scss */
+body#magazine .magazine-content .magazine-week p {
+  margin-bottom: 6%;
+}
+/* line 25, ../compass/sass/pages/_magazine.scss */
+body#magazine .swiper-container {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 28, ../compass/sass/pages/_magazine.scss */
+body#magazine .swiper-container .swiper-slide {
+  text-align: center;
+  overflow: hidden;
+}
+/* line 32, ../compass/sass/pages/_magazine.scss */
+body#magazine .swiper-container .swiper-slide img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 3, ../compass/sass/pages/_books.scss */
+body#single-book .swiper-container {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 670px) {
+  /* line 10, ../compass/sass/layout/_mobile.scss */
+  body header .logo {
+    z-index: 5;
+  }
+  /* line 13, ../compass/sass/layout/_mobile.scss */
+  body header .logo.fixed {
+    position: fixed;
+  }
+  /* line 16, ../compass/sass/layout/_mobile.scss */
+  body header nav {
+    font-size: 16px;
+    line-height: 1.4;
+    display: block;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 0px;
+    right: -100%;
+    margin: 0px;
+    padding: 10px;
+    background: #bf301a;
+    border-left: 5px solid #ffffff;
+    z-index: 5;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+@media screen and (max-width: 670px) and (min-width: 0) and (max-width: 480px) {
+  /* line 16, ../compass/sass/layout/_mobile.scss */
+  body header nav {
+    font-size: 3.2vw;
+  }
+}
+@media screen and (max-width: 670px) and (min-width: 481px) and (max-width: 670px) {
+  /* line 16, ../compass/sass/layout/_mobile.scss */
+  body header nav {
+    font-size: 2.66667vw;
+  }
+}
+@media screen and (max-width: 670px) and (min-width: 671px) and (max-width: 1024px) {
+  /* line 16, ../compass/sass/layout/_mobile.scss */
+  body header nav {
+    font-size: 1.6vw;
+  }
+}
+@media screen and (max-width: 670px) and (min-width: 0) and (max-width: 480px) {
+  /* line 16, ../compass/sass/layout/_mobile.scss */
+  body header nav {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 670px) and (min-width: 481px) and (max-width: 670px) {
+  /* line 16, ../compass/sass/layout/_mobile.scss */
+  body header nav {
+    font-size: 3.33333vw;
+  }
+}
+@media screen and (max-width: 670px) and (min-width: 671px) and (max-width: 1024px) {
+  /* line 16, ../compass/sass/layout/_mobile.scss */
+  body header nav {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 670px) {
+  /* line 31, ../compass/sass/layout/_mobile.scss */
+  body header nav ul.list {
+    margin-top: 10%;
+  }
+  /* line 33, ../compass/sass/layout/_mobile.scss */
+  body header nav ul.list li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  /* line 37, ../compass/sass/layout/_mobile.scss */
+  body header nav ul.list li a {
+    display: block;
+    border: none;
+    color: #ffffff;
+  }
+  /* line 42, ../compass/sass/layout/_mobile.scss */
+  body header nav ul.list li a.active {
+    color: #333333;
+    border: none;
+  }
+  /* line 43, ../compass/sass/layout/_mobile.scss */
+  body header nav ul.list li a:hover {
+    border: none;
+  }
+  /* line 49, ../compass/sass/layout/_mobile.scss */
+  body header .mask {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    z-index: 4;
+  }
+  /* line 61, ../compass/sass/layout/_mobile.scss */
+  body header .mobile-nav {
+    float: right;
+    display: block;
+    width: 5%;
+    background-size: contain;
+    margin-top: 2%;
+    cursor: pointer;
+  }
+  /* line 69, ../compass/sass/layout/_mobile.scss */
+  body header .mobile-nav img {
+    width: 100%;
+  }
+  /* line 72, ../compass/sass/layout/_mobile.scss */
+  body header .mobile-nav-close {
+    float: right;
+    display: block;
+    width: 8.5%;
+    height: 0%;
+    padding-bottom: 7.14%;
+    background: url(../images/icon-nav-close.gif) top right no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+  /* line 83, ../compass/sass/layout/_mobile.scss */
+  body header .social-links {
+    width: 25%;
+    padding-top: 2%;
+    margin-right: 4%;
+  }
+  /* line 91, ../compass/sass/layout/_mobile.scss */
+  body .swiper-pagination {
+    display: none;
+  }
+
+  /* line 99, ../compass/sass/layout/_mobile.scss */
+  body#home .recipe-finder {
+    margin-bottom: 4%;
+  }
+  /* line 102, ../compass/sass/layout/_mobile.scss */
+  body#home .recipe-finder .col4 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0px;
+    height: auto;
+  }
+  /* line 107, ../compass/sass/layout/_mobile.scss */
+  body#home .recipe-finder .col4 input[type="text"] {
+    padding: 2%;
+    width: 65.21739%;
+    float: left;
+    margin-right: 4.34783%;
+    margin-bottom: 4%;
+  }
+  /* line 113, ../compass/sass/layout/_mobile.scss */
+  body#home .recipe-finder .col4 .button {
+    clear: none !important;
+    width: 30.43478%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 117, ../compass/sass/layout/_mobile.scss */
+  body#home .recipe-finder .col4 .button input[type="submit"] {
+    width: 100% !important;
+    padding: 5.5% 8% !important;
+  }
+  /* line 124, ../compass/sass/layout/_mobile.scss */
+  body#home .recipe-finder .col4.recipe {
+    width: 47.82609%;
+    float: left;
+    margin-right: 4.34783%;
+    height: 0;
+    padding-bottom: 57.74468%;
+  }
+  /* line 128, ../compass/sass/layout/_mobile.scss */
+  body#home .recipe-finder .col4.recipe:first-of-type {
+    clear: both;
+  }
+  /* line 132, ../compass/sass/layout/_mobile.scss */
+  body#home .recipe-finder .col4.recipe:nth-child(2n + 1) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 136, ../compass/sass/layout/_mobile.scss */
+  body#home .recipe-finder .col4.recipe:last-of-type {
+    display: block;
+  }
+  /* line 142, ../compass/sass/layout/_mobile.scss */
+  body#home .bhg {
+    width: 47.82609%;
+    float: left;
+    margin-right: 4.34783%;
+    height: 0;
+    padding-bottom: 57.74468%;
+  }
+  /* line 146, ../compass/sass/layout/_mobile.scss */
+  body#home .bhg:nth-of-type(2n) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 151, ../compass/sass/layout/_mobile.scss */
+  body#home .events, body#home .news {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    padding-bottom: 4%;
+  }
+  /* line 156, ../compass/sass/layout/_mobile.scss */
+  body#home .events .col-inner, body#home .news .col-inner {
+    padding: 4%;
+  }
+  /* line 159, ../compass/sass/layout/_mobile.scss */
+  body#home .events .col-inner .event, body#home .news .col-inner .event {
+    width: 47.82609%;
+    float: left;
+    margin-right: 4.34783%;
+  }
+  /* line 162, ../compass/sass/layout/_mobile.scss */
+  body#home .events .col-inner .event:nth-of-type(2n), body#home .news .col-inner .event:nth-of-type(2n) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 166, ../compass/sass/layout/_mobile.scss */
+  body#home .events .col-inner .event:nth-of-type(3), body#home .news .col-inner .event:nth-of-type(3) {
+    display: none;
+  }
+  /* line 170, ../compass/sass/layout/_mobile.scss */
+  body#home .events .col-inner .event .event-image, body#home .news .col-inner .event .event-image {
+    display: none;
+  }
+  /* line 174, ../compass/sass/layout/_mobile.scss */
+  body#home .events .col-inner .event .event-info, body#home .news .col-inner .event .event-info {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 181, ../compass/sass/layout/_mobile.scss */
+  body#home .news {
+    width: 47.82609%;
+    float: left;
+    margin-right: 4.34783%;
+    height: 0;
+    padding-bottom: 57.74468%;
+  }
+  /* line 185, ../compass/sass/layout/_mobile.scss */
+  body#home .news .col-inner {
+    padding: 6% 10%;
+  }
+  /* line 188, ../compass/sass/layout/_mobile.scss */
+  body#home .news .col-inner .event {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 199, ../compass/sass/layout/_mobile.scss */
+  body header .logo {
+    width: 25%;
+  }
+  /* line 205, ../compass/sass/layout/_mobile.scss */
+  body .recipe .recipe-label {
+    font-weight: normal;
+    padding: 2% 4%;
+  }
+  /* line 212, ../compass/sass/layout/_mobile.scss */
+  body .cols .col2, body .cols .col3, body .cols .col4 {
+    margin-bottom: 4%;
+  }
+  /* line 216, ../compass/sass/layout/_mobile.scss */
+  body .cols .col3 {
+    width: 47.82609%;
+    float: left;
+    margin-right: 4.34783%;
+    height: 0;
+    padding-bottom: 57.74468%;
+    float: left;
+  }
+  /* line 221, ../compass/sass/layout/_mobile.scss */
+  body .cols .col3:nth-child(2n) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 225, ../compass/sass/layout/_mobile.scss */
+  body .cols .col3:nth-child(3n) {
+    float: left;
+    margin-right: auto;
+  }
+  /* line 231, ../compass/sass/layout/_mobile.scss */
+  body .cols .col4 {
+    width: 47.82609%;
+    float: left;
+    margin-right: 4.34783%;
+    height: 0;
+    padding-bottom: 57.74468%;
+  }
+  /* line 235, ../compass/sass/layout/_mobile.scss */
+  body .cols .col4:nth-of-type(2n) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 241, ../compass/sass/layout/_mobile.scss */
+  body section.col-main {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 254, ../compass/sass/layout/_mobile.scss */
+  body footer .footer-inner .newsletter form .wpcf7-form-control-wrap, body footer .footer-inner .newsletter form input[type="submit"] {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2%;
+  }
+  /* line 261, ../compass/sass/layout/_mobile.scss */
+  body footer .footer-inner .footer-info {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 265, ../compass/sass/layout/_mobile.scss */
+  body footer .footer-inner .footer-section {
+    width: 47.82609%;
+    float: left;
+    margin-right: 4.34783%;
+  }
+
+  /* line 274, ../compass/sass/layout/_mobile.scss */
+  body#recipes .col-left, body#blog .col-left {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 277, ../compass/sass/layout/_mobile.scss */
+  body#recipes .col-left .search-recipes, body#recipes .col-left .filter-list, body#recipes .col-left input[type="text"], body#recipes .col-left .button input[type="submit"], body#blog .col-left .search-recipes, body#blog .col-left .filter-list, body#blog .col-left input[type="text"], body#blog .col-left .button input[type="submit"] {
+    padding: 2% 3%;
+  }
+  /* line 281, ../compass/sass/layout/_mobile.scss */
+  body#recipes .col-left .grey-box-header, body#recipes .col-left input[type="text"], body#recipes .col-left input[type="radio"], body#recipes .col-left .search-recipes, body#recipes .col-left .filter-list, body#blog .col-left .grey-box-header, body#blog .col-left input[type="text"], body#blog .col-left input[type="radio"], body#blog .col-left .search-recipes, body#blog .col-left .filter-list {
+    margin-bottom: 2%;
+  }
+  /* line 282, ../compass/sass/layout/_mobile.scss */
+  body#recipes .col-left .label-header, body#blog .col-left .label-header {
+    margin-bottom: 0;
+  }
+  /* line 284, ../compass/sass/layout/_mobile.scss */
+  body#recipes .col-left .advert, body#recipes .col-left ul.filter, body#blog .col-left .advert, body#blog .col-left ul.filter {
+    display: none;
+  }
+  /* line 287, ../compass/sass/layout/_mobile.scss */
+  body#recipes .col-left .filter-list form.mobile-filter, body#blog .col-left .filter-list form.mobile-filter {
+    display: block;
+  }
+  /* line 290, ../compass/sass/layout/_mobile.scss */
+  body#recipes .col-left .filter-list form.mobile-filter select, body#blog .col-left .filter-list form.mobile-filter select {
+    width: 100%;
+  }
+  /* line 293, ../compass/sass/layout/_mobile.scss */
+  body#recipes .col-left .filter-list form.mobile-filter select option, body#blog .col-left .filter-list form.mobile-filter select option {
+    text-align: left;
+  }
+  /* line 299, ../compass/sass/layout/_mobile.scss */
+  body#recipes .no-results, body#blog .no-results {
+    padding-left: 45%;
+  }
+
+  /* line 305, ../compass/sass/layout/_mobile.scss */
+  body#single-recipe .recipe-image, body#single-recipe .recipe-share {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 308, ../compass/sass/layout/_mobile.scss */
+  body#single-recipe .cols .col2, body#single-recipe .cols div.ingredients {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 311, ../compass/sass/layout/_mobile.scss */
+  body#single-recipe .cols .col2 ul.ingredients, body#single-recipe .cols div.ingredients ul.ingredients {
+    margin-bottom: 0;
+  }
+  /* line 313, ../compass/sass/layout/_mobile.scss */
+  body#single-recipe .cols .col2 ul.ingredients li, body#single-recipe .cols div.ingredients ul.ingredients li {
+    padding: 1.5% 0;
+  }
+
+  /* line 322, ../compass/sass/layout/_mobile.scss */
+  body#magazine article.col-mid, body#magazine section.col-sub {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 329, ../compass/sass/layout/_mobile.scss */
+  body#blog .article-listing .article-image, body#events .article-listing .article-image, body#tag .article-listing .article-image {
+    width: 30.43478%;
+    float: left;
+    margin-right: 4.34783%;
+  }
+  /* line 331, ../compass/sass/layout/_mobile.scss */
+  body#blog .article-listing .article-info, body#events .article-listing .article-info, body#tag .article-listing .article-info {
+    width: 65.21739%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 334, ../compass/sass/layout/_mobile.scss */
+  body#blog section.col-right, body#events section.col-right, body#tag section.col-right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 338, ../compass/sass/layout/_mobile.scss */
+  body#single article.col-main {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 339, ../compass/sass/layout/_mobile.scss */
+  body#single section.col-left {
+    display: none;
+  }
+
+  /* line 343, ../compass/sass/layout/_mobile.scss */
+  body#single-book article.col-main, body#single-book section.col-left {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 347, ../compass/sass/layout/_mobile.scss */
+  body#page article.col-main, body#page section.col-right, body#events article.col-main, body#events section.col-right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 350, ../compass/sass/layout/_mobile.scss */
+  body#page article.col-main .news, body#page section.col-right .news, body#events article.col-main .news, body#events section.col-right .news {
+    height: auto;
+    padding-bottom: 0;
+  }
+  /* line 354, ../compass/sass/layout/_mobile.scss */
+  body#page article.col-main .news .col-inner, body#page section.col-right .news .col-inner, body#events article.col-main .news .col-inner, body#events section.col-right .news .col-inner {
+    padding: 4% 6%;
+  }
+  /* line 359, ../compass/sass/layout/_mobile.scss */
+  body#page article.col-main .advert, body#page section.col-right .advert, body#events article.col-main .advert, body#events section.col-right .advert {
+    display: none;
+  }
+
+  /* line 365, ../compass/sass/layout/_mobile.scss */
+  body#contact .cols .col2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,8 @@
+body#single-book {
+	
+	.swiper-container {
+		@include span(full);
+		margin-bottom: 2%;
+	}
+
+}

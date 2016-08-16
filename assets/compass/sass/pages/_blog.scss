@@ -1,0 +1,102 @@
+body#blog, body#events, body#tag {
+
+	.article-listing {
+		@include span(full);
+		border-bottom: 1px solid $grey;
+		padding-bottom: 2%;
+		margin-bottom: 2%;
+
+		.article-image {
+			@include span(2);
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.article-info {
+			@include span(10 last);
+			@include navlink;
+
+			.article-title {
+				h2 {
+					font-family: 'Open sans', sans-serif;
+					@include fontsize(18);
+					color: $grey-dark;
+					text-transform: none;
+					font-weight: normal;
+
+					a { color: $grey-dark; }
+				}
+			}
+
+			.article-date {
+				@include fontsize(12);
+				color: $grey-dark;
+				font-weight: bold;
+				margin-bottom: 1%;
+			}
+
+			a {
+				color: $red;
+			}
+		}
+	}
+
+}
+
+body#single-blog, body#single {
+
+	article {
+		@include fontsize(16);
+		@include navlink;
+	
+		h1 {
+			@extend .article-heading;
+		}
+
+		p {
+			margin-bottom: 2.5%;
+		}
+		
+		a { 
+			color: $orange; 
+		}
+
+		div.article-social {
+			@include span(full);
+			padding: 1% 0;
+			border-top: 1px solid $grey;
+			border-bottom: 1px solid $grey;
+			margin-bottom: 4%;
+			text-transform: uppercase;
+			@include fontsize(14);
+		}
+
+		div.article-float {
+			max-width: 50%;
+			float:right;
+			margin-left:10px;
+			margin-bottom:10px;
+
+			img { width: 100%; }
+		}
+
+		.tags {
+			@include span(full);
+			border-top: 1px solid $grey;
+			margin-top: 2%;
+			padding-top: 4%;
+			color: $orange;
+
+			span {
+				color: $grey-dark;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+		}
+
+	}
+
+}

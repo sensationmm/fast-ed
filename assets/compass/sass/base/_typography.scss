@@ -1,0 +1,111 @@
+body, input, textarea {
+	font-family: 'Open Sans', sans-serif;
+	color: $text-color;
+	@include fontsize(14);
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	@include fontsize(28);
+	text-transform: uppercase;
+	color: $brown;
+}
+
+.article-heading {
+	font-family: 'Opens sans', sans-serif;
+	text-transform: none;
+	@include fontsize(36, 1.2);
+	font-weight: normal;
+	margin-bottom: 2%;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	@include fontsize(28);
+	text-transform: uppercase;
+	color: $red;
+}
+
+article > h2, h2.article {
+	font-family: 'Open sans', sans-serif;
+	color: $grey-dark;
+	text-transform: uppercase;
+	@include fontsize(16);
+	margin-bottom: 2.5%;
+}
+
+article > p {
+	@include fontsize(16);
+	margin-bottom: 2.5%;
+}
+
+p.intro {
+	@include fontsize(16);
+}
+
+div.button {
+
+	a, input[type="submit"] {
+		font-family: 'Oswald', sans-serif;
+		color: $white !important;
+		@include fontsize(15);
+		font-weight: bold;
+		text-decoration: none !important;
+		background: $grey-dark;
+		text-transform: uppercase;
+		padding: 2% 8%;
+		border-radius: 5px;
+
+		&:hover {
+			background: $gold;
+			text-decoration: none !important;
+		}
+	}
+
+	&.red a, &.red input[type="submit"] {
+		background: $red;
+
+		&:hover {
+			background: $gold;
+		}
+	}
+
+	&.back {
+		display: inline;
+		a {
+			padding: 1% 2%;
+			float: right;
+		}
+	}
+
+	&.booking {
+		top: 0px;
+		right: 0px;
+		@include span(full);
+		margin-bottom: 4%;
+
+		a {
+			display: block;
+			width: 100%;
+			padding: 5% 0;
+			float: right;
+			@include fontsize(24);
+			text-align: center;
+		}
+	}
+
+	&.learnmore {
+
+		a {
+			display: inline-block;
+			@include fontsize(20);
+			padding: 2% 4%;
+		}
+	}
+}
+
+ul.list {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}

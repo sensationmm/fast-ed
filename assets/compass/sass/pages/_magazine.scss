@@ -1,0 +1,36 @@
+body#magazine {
+	
+	.magazine-content {
+		background: $grey-light;
+		border: 1px solid $grey;
+		border-radius: 5px;
+		margin: 5% 0;
+
+		.magazine-week {
+			h2 { @extend h2.article; }
+			display: table-cell;
+			padding: 2% 4%;
+			border-right: 1px solid $grey;
+
+			&:last-of-type {
+				border: 0px;
+			}
+
+			p {
+				margin-bottom: 6%;
+			}
+		}
+	}
+
+	.swiper-container {
+		@include span(full);
+
+		.swiper-slide { 
+			text-align: center; 
+			overflow: hidden;
+
+			img { width: 100%; margin: 0 auto; }
+		}
+	}
+
+}

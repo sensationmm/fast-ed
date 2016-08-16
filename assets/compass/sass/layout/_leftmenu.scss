@@ -1,0 +1,80 @@
+.grey-box {
+	@include span(full);
+	padding: 6% 9%;
+	background: $grey-light;
+	border-radius: 5px;
+	border: 1px solid $grey;
+	margin-bottom: 5%;
+	color: $grey-dark;
+
+	@include navlink;
+
+	.grey-box-header {
+		font-family: 'Open Sans', sans-serif;
+		@include fontsize(16);
+		text-transform: uppercase;
+		color: $red;
+		font-weight: bold;
+		margin-bottom: 6%;
+	}
+
+	.label-header {
+		@include span(full);
+		margin-bottom: 4%;
+	}
+
+	label {
+		margin-right: 10%;
+	}
+
+	ul.filter {
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+		line-height: 2;
+
+		li {
+			border-bottom: 1px solid $grey;
+
+			a { display: block; }
+
+			&.nested {
+				> a:after {
+					content: "+";
+					float: right;
+				}
+			}
+
+			ul {
+				display: none;
+				list-style: none;
+				background: $grey;
+				padding: 4%;
+				margin: 0px;
+				line-height: 1.6;
+
+				li {
+					border: 0px;
+					a:after { content: none; }
+				}
+			}
+
+			&.active {
+				> a { font-weight: bold; color: $red; }
+			}
+
+			&.nested.active {
+				ul { display: block; }
+				> a:after { content: none; }
+			}
+		}
+	}
+}
+
+.col-right {
+	.advert { margin-bottom: 6%; }
+	
+	.cols {
+		> div { margin-bottom: 6%; }
+	}
+}
